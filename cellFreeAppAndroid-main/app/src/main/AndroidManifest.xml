@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permiso para consultar las aplicaciones en primer plano -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+    
+    <!-- Permiso para conexión a internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!-- Permisos para monitoreo automático -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" 
+                     tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- Permisos para mostrar sobre otras apps -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Permisos para inicio automático -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:name=".CellFreeApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CellFreeApp"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CellFreeApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CellFreeApp" />
+            
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CellFreeApp" />
+            
+        <activity
+            android:name=".AppBlockerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CellFreeApp.NoActionBar" />
+            
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CellFreeApp.NoActionBar" />
+            
+        <activity
+            android:name=".UsageReportActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CellFreeApp.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop" />
+            
+        <activity
+            android:name=".MonitoringConfigActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CellFreeApp.NoActionBar" />
+
+        <service
+            android:name=".MyForegroundService"
+            android:foregroundServiceType="specialUse"
+            android:exported="false">
+
+            <!-- Es obligatorio explicar el caso de uso para 'specialUse' -->
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_TYPE"
+                android:value="Esta aplicación requiere un servicio continuo para detectar cambios en las aplicaciones en primer plano y aplicar límites de tiempo configurados por el usuario para un control en la procrastinacion mediante el uso del celular." />
+        </service>
+
+        <service
+            android:name=".utils.AppBlockerService"
+            android:foregroundServiceType="specialUse"
+            android:exported="false">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_TYPE"
+                android:value="Esta aplicación necesita monitorear el uso para ayudar al control de la procrastinación." />
+        </service>
+
+        <receiver
+            android:name=".utils.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

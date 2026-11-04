@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">CellFree</string>
+    
+    <!-- Login Screen -->
+    <string name="titulo_login">CellFree</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="forgot_password">¿Olvidó la contraseña?</string>
+    <string name="error_empty_email">Ingrese el correo</string>
+    <string name="error_invalid_email">Ingrese un correo válido</string>
+    <string name="error_empty_password">Ingrese la contraseña</string>
+    <string name="error_short_password">Contraseña muy corta</string>
+    <string name="login_success">Bienvenido: %1$s</string>
+    
+    <!-- Register Screen -->
+    <string name="titulo_registro">Crear Cuenta</string>
+    <string name="subtitulo_registro">Únete a CellFree y mejora tu bienestar digital</string>
+    <string name="hint_name">Nombre completo</string>
+    <string name="hint_password_confirm">Confirmar contraseña</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="already_have_account">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="error_empty_name">Ingrese su nombre</string>
+    <string name="error_short_name">El nombre debe tener al menos 2 caracteres</string>
+    <string name="error_password_too_short">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="error_empty_password_confirm">Confirme su contraseña</string>
+    <string name="error_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="register_success">Bienvenido %1$s! Cuenta creada exitosamente</string>
+    
+    <!-- Main Menu -->
+    <string name="menu_principal">Menú principal</string>
+    <string name="bienvenido_usuario">Bienvenido usuario</string>
+    <string name="btn_bloquear_apps">Bloquear aplicaciones</string>
+    <string name="btn_calendario">Calendario</string>
+    <string name="btn_reporte_uso">Reporte de uso</string>
+    <string name="btn_monitoreo_automatico">⚙️ Monitoreo Automático</string>
+    <string name="publicidad">Publicidad</string>
+    
+    <!-- App Management Screen -->
+    <string name="titulo_gestionar_apps">Gestión de aplicaciones</string>
+    <string name="filtro_todas">Todas</string>
+    <string name="fecha_inicio">Fecha inicio</string>
+    <string name="fecha_fin">Fecha fin</string>
+    <string name="minutos_permitidos">Minutos permitidos</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_bloquear">Bloquear</string>
+    <string name="configuracion_guardada">Configuración guardada exitosamente</string>
+    <string name="app_bloqueada">Aplicación bloqueada</string>
+    
+    <!-- Calendar Screen -->
+    <string name="titulo_calendario">Calendario</string>
+    <string name="campo_tarea">Escriba su tarea aquí</string>
+    <string name="btn_agregar_evento">++</string>
+    <string name="importar_calendario">Importar calendario</string>
+    <string name="desde_archivo">Desde archivo</string>
+    <string name="desde_url">Desde URL</string>
+    <string name="evento_agregado">Evento agregado</string>
+    <string name="ejemplo_evento">Entrega trabajo 1 – 10:23 am</string>
+    
+    <!-- Calendar Days -->
+    <string name="lunes">L</string>
+    <string name="martes">M</string>
+    <string name="miercoles">X</string>
+    <string name="jueves">J</string>
+    <string name="viernes">V</string>
+    <string name="sabado">S</string>
+    <string name="domingo">D</string>
+    
+    <!-- Usage Report Screen -->
+    <string name="titulo_reporte">Reporte de uso</string>
+    <string name="filtro_fechas">Filtro por fechas</string>
+    <string name="fecha_desde">Desde</string>
+    <string name="fecha_hasta">Hasta</string>
+    <string name="columna_diario">Diario</string>
+    <string name="columna_semana">Semana</string>
+    <string name="columna_mes">Mes</string>
+    <string name="aplicacion">Aplicación</string>
+    <string name="tiempo_uso">Tiempo de uso</string>
+    <string name="ejemplo_instagram">Instagram</string>
+    <string name="ejemplo_tiempo_diario">8</string>
+    <string name="ejemplo_tiempo_semanal">40</string>
+    <string name="ejemplo_tiempo_mensual">240</string>
+    <string name="minutos_abrev">min</string>
+    
+    <!-- Navigation -->
+    <string name="btn_volver">Volver</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+    
+    <!-- Time units -->
+    <string name="minutos">minutos</string>
+    <string name="horas">horas</string>
+    <string name="dias">días</string>
+
+    <!-- Additional Login strings -->
+    <string name="create_account">Crear una cuenta</string>
+    <string name="forgot_password_clicked">Funcionalidad de recuperar contraseña</string>
+    <string name="create_account_clicked">Funcionalidad de crear cuenta</string>
+
+    <!-- Configuration and Debug -->
+    <string name="show_api_config">Mostrar configuración API</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <!-- Calendar strings -->
+    <string name="descripcion_calendario">Gestiona tus eventos y recordatorios</string>
+    <string name="evento_ejemplo">Reunión de equipo - 10:00 AM</string>
+    <string name="hora_ejemplo">10:00 AM - 11:30 AM</string>
+
+    <!-- Usage Report strings -->
+    <string name="descripcion_reporte">Revisa estadísticas de uso de aplicaciones</string>
+    <string name="tiempo_pantalla_hoy">Tiempo de pantalla hoy</string>
+    <string name="tiempo_ejemplo">3h 25min</string>
+    <string name="app_mas_usada">App más usada</string>
+    <string name="app_ejemplo">Instagram</string>
+    <string name="btn_ver_detalle">Ver detalle</string>
+    <string name="detalle_mostrado">Mostrando detalle del reporte</string>
+
+    <!-- Generic -->
+    <string name="main_image">Imagen principal</string>
+
+    <string name="app_is_restricted">%1$s está restringido</string>
+    <string name="blocked_by_time">🔒 Bloqueado por %1$s%2$s</string>
+    <string name="message_encouragement">Alcanzaste el límite de uso de %1$s. Mantén el bloqueo y sigue con tus objetivos. ¡Tú puedes!</string>
+</resources>

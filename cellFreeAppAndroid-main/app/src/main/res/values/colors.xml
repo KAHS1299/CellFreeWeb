@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CellFree App Color Palette - Exact Colors -->
+    <color name="cellfree_primary">#7193AE</color>       <!-- Verde principal CellFree -->
+    <color name="cellfree_dark">#0A69D1</color>          <!-- Verde oscuro CellFree -->
+    <color name="cellfree_accent">#56AFEE</color>        <!-- Verde acento CellFree -->
+    <color name="white">#FFFFFFFF</color>               <!-- Blanco para texto -->
+    <color name="black">#FF000000</color>               <!-- Negro -->
+    <color name="gray_light">#F5F5F5</color>            <!-- Gris claro para fondos -->
+    <color name="gray_medium">#CCCCCC</color>           <!-- Gris medio para bordes -->
+    <color name="gray_dark">#666666</color>             <!-- Gris oscuro para texto secundario -->
+    <color name="gray">#888888</color>                  <!-- Gris estándar -->
+    <color name="calendar_event_pending">#EF5350</color>
+    <color name="calendar_event_overdue">#9E9E9E</color>
+    <color name="calendar_event_completed">#4CAF50</color>
+    <color name="calendar_event_type_task">#2196F3</color>
+    <color name="calendar_event_type_exam">#F44336</color>
+    <color name="calendar_event_type_study">#4CAF50</color>
+    <color name="calendar_event_type_other">#9E9E9E</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#333333</color>          <!-- Color principal para texto -->
+    <color name="text_secondary">#666666</color>        <!-- Color secundario para texto -->
+    <color name="primary_color">#0A69D1</color>         <!-- Alias para cellfree_primary -->
+    
+    <!-- Category colors -->
+    <color name="category_social">#E91E63</color>        <!-- Rosa para redes sociales -->
+    <color name="category_games">#9C27B0</color>        <!-- Morado para juegos -->
+    <color name="category_entertainment">#FF5722</color><!-- Naranja para entretenimiento -->
+    <color name="category_productivity">#2196F3</color> <!-- Azul para productividad -->
+    
+    <!-- Additional colors -->
+    <color name="light_gray">#F8F9FA</color>           <!-- Gris muy claro para alternar filas -->
+    <color name="gray_text">#757575</color>            <!-- Gris para texto secundario -->
+    
+    <!-- Legacy colors (keeping for compatibility) -->
+    <color name="green_primary">#14AE5C</color>          <!-- Alias for cellfree_primary -->
+    <color name="green_light">#81C784</color>            
+    <color name="green_dark">#27583E</color>             <!-- Alias for cellfree_dark -->
+    <color name="green_accent">#2AB514</color>           <!-- Alias for cellfree_accent -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>

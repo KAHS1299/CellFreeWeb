@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Header unificado -->
+    <include layout="@layout/header_unified" />
+
+    <!-- Contenido principal con scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Mensaje de bienvenida -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/welcome_background"
+                android:padding="20dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bienvenido_usuario"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Botón 1: Bloquear aplicaciones -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_bloquear_apps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/btn_bloquear_apps"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/cellfree_dark"
+                android:padding="16dp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_block"
+                app:iconTint="@color/white"
+                app:iconGravity="start" />
+
+            <!-- Botón 2: Calendario -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_calendario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/btn_calendario"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/cellfree_dark"
+                android:padding="16dp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_calendar"
+                app:iconTint="@color/white"
+                app:iconGravity="start" />
+
+            <!-- Botón 3: Reporte de uso -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reporte_uso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/btn_reporte_uso"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/cellfree_dark"
+                android:padding="16dp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_report"
+                app:iconTint="@color/white"
+                app:iconGravity="start" />
+
+            <!-- Botón 4: Monitoreo Automático -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_monitoreo_automatico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/btn_monitoreo_automatico"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/cellfree_dark"
+                android:padding="16dp"
+                app:cornerRadius="12dp"
+                app:icon="@android:drawable/ic_dialog_info"
+                app:iconTint="@color/white"
+                app:iconGravity="start" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Footer unificado -->
+    <include layout="@layout/footer_unified" />
+
+</LinearLayout>

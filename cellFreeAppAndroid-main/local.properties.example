@@ -1,0 +1,6 @@
+# URL del backend Laravel para el emulador Android local.
+# El emulador usa 10.0.2.2 para acceder al localhost de Windows.
+API_BASE_URL=http://10.0.2.2:8000/api/
+API_TIMEOUT_SECONDS=30
+API_ENABLE_LOGGING=true
+APP_DEBUG_MODE=true

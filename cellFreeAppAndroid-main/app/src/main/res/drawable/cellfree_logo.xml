@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Círculo de fondo azul -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M60,60m-60,0a60,60 0,1 1,120 0a60,60 0,1 1,-120 0" />
+        
+    <!-- Mano sosteniendo teléfono -->
+    <path
+        android:fillColor="#FCA5A5"
+        android:pathData="M35,45 L45,45 L45,75 L40,80 L30,80 Z" />
+        
+    <!-- Teléfono -->
+    <path
+        android:fillColor="#E5E7EB"
+        android:pathData="M45,35 L65,35 Q70,35 70,40 L70,70 Q70,75 65,75 L45,75 Q40,75 40,70 L40,40 Q40,35 45,35 Z" />
+        
+    <!-- Pantalla del teléfono -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M42,42 L68,42 L68,68 L42,68 Z" />
+        
+    <!-- Cadena -->
+    <path
+        android:fillColor="#9CA3AF"
+        android:pathData="M70,50 L75,50 Q80,50 80,55 L80,60 Q80,65 75,65 L70,65 M75,65 L80,65 Q85,65 85,70 L85,75 Q85,80 80,80 L75,80" />
+</vector>

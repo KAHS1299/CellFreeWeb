@@ -1,0 +1,48 @@
+# Configuración y secretos locales
+**/.env
+**/.env.*
+!**/.env.example
+**/local.properties
+
+# Dependencias descargadas
+**/vendor/
+**/node_modules/
+**/.gradle/
+
+# Archivos de compilación y pruebas
+**/build/
+**/.kotlin/
+**/.externalNativeBuild/
+**/.cxx/
+**/captures/
+**/.phpunit.result.cache
+*.apk
+*.aab
+
+# IDE y herramientas locales
+**/.idea/
+**/.vscode/
+**/.claude/
+**/.codex/
+**/.codegraph/
+**/.mcp.json
+*.iml
+
+# Cachés, logs y archivos generados por Laravel/Swagger
+**/storage/logs/*.log
+**/storage/framework/cache/data/**
+!**/storage/framework/cache/data/.gitignore
+!**/storage/framework/cache/.gitignore
+**/storage/framework/sessions/**
+!**/storage/framework/sessions/.gitignore
+**/storage/framework/views/*.php
+!**/storage/framework/views/.gitignore
+**/bootstrap/cache/*.php
+**/storage/api-docs/api-docs.json
+
+# Respaldo SQL con datos insertados: conservar local, revisar antes de compartir
+CellFreeApp_Base/*.sql
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
